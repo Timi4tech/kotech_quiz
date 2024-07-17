@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotech-login/signup</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header></header>
+ <div id="dove">
+    <div id = "grouplogin">
+      <div>
+      <h1 id="kotechquiz">KOTECH QUIZ</h1>
+      <h2 id = "login">LOGIN</h2>
+        <p id="loginSuccess"></p>
+      </div>
+        <form id="form1" action="app.html" method="post">
+          <p>
+        <label for="loginUserEmail" class="text" >Username:</label><br>
+        <input type="email" id="loginUserEmail" name="loginusername" class= "logininput" required>
+        </p>
+        <p>
+        <label for="loginPassword" class="text">Password:</label><br>
+        <input type="password"  name="loginPassword" class="logininput" id = "loginPassword" required>
+        </p>
+        <p >   
+          <label for="show">Show Password</label>
+          <input type="checkbox"  class="ishow" id="loginshow" name="">
+        </p>
+        <div id = "groupbuttonlogin"><button id = "buttonlogin" class="button" type = "submit">Login</button></div>
+       </form>
+       <p>Do not have an account? <button class="textactive" id="textsignup">SignUp</button></p>
+    </div>
+  
+    <div id = "groupsignup">
+        <h1 id="kotechquiz">KOTECH QUIZ</h1>
+        <h2 id = "login">SIGNUP</h2>
+        <p id = "message"></p>
+        <form id="form2" action="app.html" method="post">
+          <p id="success"></p>
+            <p>
+        <label for="fullname" class="text" >Fullname:</label>
+        <input type="text" id="fullname" name="fullname" class= "logininput"  required title="Name is required" placeholder="Surname First"  >
+            </p>
+            <p>
+        <label for="Username" class="text" >Username:</label><br>
+        <input type="text" id="Username" name="Username" class= "logininput" autocomplete= "Username"  required>
+            </p>
+          <p>  
+        <label for="Email" class="text" >Email:</label>
+        <input type="Email" id="Email" name="Email" class= "logininput" autocomplete= "Email" required>
+          </p>
+          <p>
+        <label for="Password" class="text">Password:</label>
+        <input type="password" class="logininput" name="Password"  id = "Password" required>
+          </p>
+          <p>
+          <label for="show" class="text">Show Password</label>
+          <input type="checkbox"  class="ishow" id="show" name="">
+          </p>
+    <div id = "groupbuttonlogin"><button id = "buttonsignup" class="button" type ="submit">Signup</button></div>
+        </form>
+        <p class="text">Already  have an account? <button class="textactive" id="textlogin">Login</button></p>
+    </div>
+ </div>
+ <script src="login.js"></script>
+</body>
+</html>
